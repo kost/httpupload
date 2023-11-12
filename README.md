@@ -8,7 +8,7 @@ Note: you should run it in trusted environments. No authentication and sanitizat
 Start web server:
 ```
 python3 httpupload.py
-php -S 0.0.0.0:8000 -f -t httupload.php
+php -S 0.0.0.0:8000 -f -t httpupload.php
 go run httpupload.go
 ```
 
