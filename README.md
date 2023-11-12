@@ -12,6 +12,8 @@ php -S 0.0.0.0:8000 -f -t httpupload.php
 go run httpupload.go
 ```
 
+Of course, you can just place php file somewhere on PHP server as well.
+
 You can use following commands to upload file (or just use browser):
 ```
 curl -F 'file=@file.txt' http://localhost:8000/
@@ -19,7 +21,7 @@ curl -X PUT --upload-file file.txt http://localhost:8000
 wget -O- --method=PUT --body-file=file.txt http://localhost:8000/file.txt
 ```
 
-For obvious reasons, you have to use following for PHP files:
+For obvious reasons, you have to use following for PHP server:
 ```
 curl -F 'file[]=@file.txt' http://localhost:8000/
 ```
